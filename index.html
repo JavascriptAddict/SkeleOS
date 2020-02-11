@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="index.css">
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/enc-base64.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/evpkdf.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/cipher-core.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/aes.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+
+    </head>
+
+<body>
+
+    <div id="overlay"></div>
+
+    <div id="topnav">
+
+        <ul>
+            <li class="right">
+                    <i class="material-icons" id="logout" onclick="promptLogOut();">
+                            exit_to_app
+                            </i>
+            </li>
+            <li class="right">
+                    <i class="material-icons pointer" onclick="screenSize();">
+                            settings_overscan
+                            </i>
+            </li>
+            <li class="right">
+                    <i class="material-icons pointer" onclick="appDrawer();">
+                            view_list
+
+                            </i>
+            </li>
+            <li class="right" id="clock">
+                
+            </li>
+            <li class="right" id="date">
+                
+            </li>
+        </ul>
+    </div>
+
+    <div id="main">
+
+        <div id="apps">
+            
+        </div>
+
+        <div class="grid-container" id="grid-container">
+                <!-- <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag1" onclick="launch(this)" src="https://bit.ly/2LF13By" draggable="true" ondragstart="drag(event)" width="50" height="50" class="center"></div> -->
+            
+        </div>
+       
+
+         
+
+
+    </div>
+
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
